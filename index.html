@@ -10,6 +10,7 @@
     <header>
         <nav>
             <a href="#home">About me</a>
+            <a href="#research">Research</a>
             <a href="#publications">Publications</a>
             <a href="Mohammad_CV.pdf" target="_blank" rel="noopener">CV</a>
         </nav>
@@ -23,7 +24,7 @@ Seyed Mahmoud" class="sidebar-photo">
                 <h1 class="sidebar-name">Mohammad Ali<br>Seyed Mahmoud</h1>
                 <p class="sidebar-location">Atlanta, GA</p>
                 <ul class="sidebar-links">
-                    <li><a href="mailto:m.seyedmahmoud@gatech.edu">Email</a></li>
+                    <li><a href="/cdn-cgi/l/email-protection#4e23603d2b372b2a232f2623213b2a0e292f3a2b2d26602b2a3b">Email</a></li>
                     <li><a href="https://www.linkedin.com/in/mohamadali-seyed-mahmoud" target="_blank" rel="noopener">LinkedIn</a></li>
                     <li><a href="https://scholar.google.com/citations?user=QB9Pg4oAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
                 </ul>
@@ -32,20 +33,62 @@ Seyed Mahmoud" class="sidebar-photo">
             <div class="content">
                 <h2>About me</h2>
                 <p>
-                    I am a third-year Ph.D. student in the <a href="https://me.gatech.edu/" target="_blank" rel="noopener">George W. Woodruff School of Mechanical Engineering</a> at Georgia Tech,
+                    I am a fourth-year Ph.D. student in the <a href="https://me.gatech.edu/" target="_blank" rel="noopener">George W. Woodruff School of Mechanical Engineering</a> at Georgia Tech,
                     where I'm fortunate to be advised by <a href="https://scholar.google.com/citations?user=C2k6mYwAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Surya Kalidindi</a>.
                 </p>
                 <p>
-                    My research sits at the intersection of <strong>materials informatics</strong>, <strong>solid mechanics</strong>,
-                    and <strong>probabilistic modeling</strong>, with a focus on applying machine learning and Bayesian inference
-                    to materials characterization and damage modeling.
+                    My research sits at the intersection of <strong>physics-based and data-driven modeling</strong> for materials systems.
+                    I develop <strong>finite element models</strong> (ABAQUS), <strong>Python-automated simulation pipelines</strong>, and
+                    <strong>ML/surrogate models</strong> for accelerated materials design and process optimization — spanning
+                    <strong>constitutive and damage modeling</strong> (GTN ductile fracture in aluminum alloy AA6111),
+                    <strong>property-driven microstructure design</strong>, and <strong>high-throughput parameter identification</strong>.
                 </p>
                 <p>
-                    In my work, I use tools from machine learning, Bayesian inference, finite element simulations,
-                    surrogate modeling, and uncertainty quantification. My research is motivated by enabling rapid,
-                    data-driven materials characterization—from small-scale specimens to constitutive model calibration—
-                    while quantifying uncertainty in model predictions.
+                    My work integrates <strong>Bayesian inference</strong>, <strong>uncertainty quantification</strong>,
+                    <strong>generative modeling</strong> (flow matching), <strong>Gaussian Process surrogates</strong>,
+                    and <strong>experimental data</strong> (load–displacement curves, full-field DIC strain fields)
+                    for model calibration and materials knowledge extraction.
+                    I am motivated by enabling rapid, uncertainty-aware materials characterization — from
+                    small-scale specimens to constitutive model calibration — by replacing expensive simulations
+                    with learned surrogates and generative models.
                 </p>
+
+                <h2 id="research">Research</h2>
+
+                <div class="research-project">
+                    <h3>Sequential Bayesian Inference for Ductile Damage Modeling <span class="pub-tag"><em>Acta Materialia</em>, 2026</span></h3>
+                    <p>
+                        Developed a surrogate-accelerated Bayesian inference framework to calibrate the GTN ductile damage model
+                        for aluminum alloy AA6111. The framework simultaneously processes load–displacement curves and
+                        full-field DIC strain fields as multimodal observables, using Gaussian Process emulation to replace
+                        expensive ABAQUS finite element simulations inside the MCMC/TMCMC inference loop.
+                        The result is full posterior distributions over GTN parameters — quantifying not just best-fit values
+                        but their uncertainty and correlations — enabling uncertainty-aware damage predictions for automotive aluminum sheet.
+                    </p>
+                </div>
+
+                <div class="research-project">
+                    <h3>Flow Matching for Posterior Sampling in Inverse Material Characterization <span class="pub-tag">Manuscript in preparation</span></h3>
+                    <p>
+                        Developing a flow matching-based generative framework for high-throughput, uncertainty-aware
+                        constitutive property identification from Small Punch Test (SPT) specimens.
+                        The framework learns a transport map from a simple prior to the posterior distribution,
+                        replacing MCMC with a single fast forward pass after training.
+                        Conditioning data integrates synchronized load–displacement curves, full-field DIC measurements,
+                        and ABAQUS FE simulations. Benchmarked against MCMC/TMCMC baselines on accuracy and computational cost.
+                    </p>
+                </div>
+
+                <div class="research-project">
+                    <h3>AI-Assisted Microstructure Realization for Property-Driven Design <span class="pub-tag"><em>Materials</em>, 2023</span></h3>
+                    <p>
+                        Built an ML-guided pipeline for in-silico microstructure realization targeting thermal conductivity
+                        objectives in refractory alloys. The pipeline generates synthetic microstructures, simulates their
+                        properties, trains a surrogate model on the resulting dataset, and optimizes toward a target property —
+                        solving the inverse design problem without exhaustive physical experimentation.
+                        Directly relevant to alloy design and process optimization in the metals industry.
+                    </p>
+                </div>
 
                 <h2>News / Highlights</h2>
                 <ul class="news-list">
@@ -76,7 +119,4 @@ Seyed Mahmoud" class="sidebar-photo">
     </main>
 
     <footer>
-        <p>© 2025 Mohammad Ali Seyed Mahmoud</p>
-    </footer>
-</body>
-</html>
+        <p>© 2026 Mohammad Ali
