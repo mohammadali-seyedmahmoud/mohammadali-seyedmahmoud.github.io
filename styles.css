@@ -136,6 +136,31 @@ main {
     margin-bottom: 1.25rem;
 }
 
+.research-project {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.research-project:last-of-type {
+    border-bottom: none;
+}
+
+.research-project h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.pub-tag {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #1a73e8;
+    margin-left: 0.4rem;
+}
+
 footer {
     text-align: center;
     padding: 1.5rem;
