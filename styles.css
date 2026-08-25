@@ -166,6 +166,13 @@ main {
     font-size: 0.88rem;
 }
 
+.profile-graduation {
+    margin-top: 0.35rem;
+    color: var(--navy);
+    font-size: 0.84rem;
+    font-weight: 700;
+}
+
 .availability {
     margin-top: 1rem;
     border-left: 3px solid var(--teal);
@@ -504,13 +511,15 @@ footer {
 
     .profile-role,
     .profile-location,
+    .profile-graduation,
     .availability,
     .profile-links {
         grid-column: 2;
     }
 
     .profile-role,
-    .profile-location {
+    .profile-location,
+    .profile-graduation {
         margin-top: 0.45rem;
     }
 
