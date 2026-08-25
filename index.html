@@ -3,120 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MohammadAli SeyedMahmoud</title>
+    <meta name="description" content="Mohammad Ali Seyed Mahmoud is a Georgia Tech Ph.D. researcher in computational materials engineering, finite-element modeling, and probabilistic inference.">
+    <title>Mohammad Ali Seyed Mahmoud | Computational Materials Researcher</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home">About me</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="Mohammad_CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav-inner" aria-label="Primary navigation">
+            <a class="site-mark" href="#home" aria-label="Mohammad Ali Seyed Mahmoud, home">MS</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a class="nav-cv" href="Mohammad_CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="layout">
-            <aside class="sidebar">
-                <img src="mohammad1.jpeg" alt="Mohammad Ali
-Seyed Mahmoud" class="sidebar-photo">
-                <h1 class="sidebar-name">Mohammad Ali<br>Seyed Mahmoud</h1>
-                <p class="sidebar-location">Atlanta, GA</p>
-                <ul class="sidebar-links">
-                    <li><a href="/cdn-cgi/l/email-protection#4e23603d2b372b2a232f2623213b2a0e292f3a2b2d26602b2a3b">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/mohamadali-seyed-mahmoud" target="_blank" rel="noopener">LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=QB9Pg4oAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-                </ul>
+    <main id="main-content">
+        <section id="home" class="profile-layout">
+            <aside class="profile-card" aria-label="Profile">
+                <img src="mohammad1.jpeg" alt="Portrait of Mohammad Ali Seyed Mahmoud" class="profile-photo">
+                <h1 class="profile-name">Mohammad Ali<br>Seyed Mahmoud</h1>
+                <p class="profile-role">Ph.D. Researcher<br>Computational Materials Engineering</p>
+                <p class="profile-location">Atlanta, Georgia</p>
+                <p class="availability">Available September 2026<br>6–9 month full-time co-op</p>
+                <div class="profile-links">
+                    <a href="mailto:m.seyedmahmoud@gatech.edu">Email</a>
+                    <a href="https://www.linkedin.com/in/mohamadali-seyed-mahmoud" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=QB9Pg4oAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+                    <a href="Mohammad_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+                </div>
             </aside>
 
-            <div class="content">
-                <h2>About me</h2>
-                <p>
-                    I am a fourth-year Ph.D. student in the <a href="https://me.gatech.edu/" target="_blank" rel="noopener">George W. Woodruff School of Mechanical Engineering</a> at Georgia Tech,
-                    where I'm fortunate to be advised by <a href="https://scholar.google.com/citations?user=C2k6mYwAAAAJ&hl=en" target="_blank" rel="noopener">Prof. Surya Kalidindi</a>.
-                </p>
-                <p>
-                    My research sits at the intersection of <strong>physics-based and data-driven modeling</strong> for materials systems.
-                    I develop <strong>finite element models</strong> (ABAQUS), <strong>Python-automated simulation pipelines</strong>, and
-                    <strong>ML/surrogate models</strong> for accelerated materials design and process optimization — spanning
-                    <strong>constitutive and damage modeling</strong> (GTN ductile fracture in aluminum alloy AA6111),
-                    <strong>property-driven microstructure design</strong>, and <strong>high-throughput parameter identification</strong>.
-                </p>
-                <p>
-                    My work integrates <strong>Bayesian inference</strong>, <strong>uncertainty quantification</strong>,
-                    <strong>generative modeling</strong> (flow matching), <strong>Gaussian Process surrogates</strong>,
-                    and <strong>experimental data</strong> (load–displacement curves, full-field DIC strain fields)
-                    for model calibration and materials knowledge extraction.
-                    I am motivated by enabling rapid, uncertainty-aware materials characterization — from
-                    small-scale specimens to constitutive model calibration — by replacing expensive simulations
-                    with learned surrogates and generative models.
-                </p>
-
-                <h2 id="research">Research</h2>
-
-                <div class="research-project">
-                    <h3>Sequential Bayesian Inference for Ductile Damage Modeling <span class="pub-tag"><em>Acta Materialia</em>, 2026</span></h3>
-                    <p>
-                        Developed a surrogate-accelerated Bayesian inference framework to calibrate the GTN ductile damage model
-                        for aluminum alloy AA6111. The framework simultaneously processes load–displacement curves and
-                        full-field DIC strain fields as multimodal observables, using Gaussian Process emulation to replace
-                        expensive ABAQUS finite element simulations inside the MCMC/TMCMC inference loop.
-                        The result is full posterior distributions over GTN parameters — quantifying not just best-fit values
-                        but their uncertainty and correlations — enabling uncertainty-aware damage predictions for automotive aluminum sheet.
+            <div class="page-content">
+                <section id="about" class="intro-section">
+                    <p class="eyebrow">Physics-based modeling × data-driven inference</p>
+                    <h2>Connecting simulations with experiments to characterize materials faster.</h2>
+                    <p class="intro-copy">
+                        I am a Mechanical Engineering Ph.D. researcher at the <a href="https://me.gatech.edu/" target="_blank" rel="noopener">Georgia Institute of Technology</a>, advised by <a href="https://www.me.gatech.edu/faculty/kalidindi" target="_blank" rel="noopener">Prof. Surya R. Kalidindi</a>. My work combines finite-element modeling, experimental metrology, and probabilistic machine learning to extract reliable material properties from limited and multimodal measurements.
                     </p>
-                </div>
-
-                <div class="research-project">
-                    <h3>Flow Matching for Posterior Sampling in Inverse Material Characterization <span class="pub-tag">Manuscript in preparation</span></h3>
                     <p>
-                        Developing a flow matching-based generative framework for high-throughput, uncertainty-aware
-                        constitutive property identification from Small Punch Test (SPT) specimens.
-                        The framework learns a transport map from a simple prior to the posterior distribution,
-                        replacing MCMC with a single fast forward pass after training.
-                        Conditioning data integrates synchronized load–displacement curves, full-field DIC measurements,
-                        and ABAQUS FE simulations. Benchmarked against MCMC/TMCMC baselines on accuracy and computational cost.
+                        I develop validated ABAQUS models and automated Python/HPC workflows that connect constitutive and damage parameters to force–displacement curves and full-field Digital Image Correlation measurements. I then use Bayesian inference, Gaussian-process surrogates, and Conditional Flow Matching to quantify uncertainty and replace repeated, expensive simulations with fast posterior inference.
                     </p>
-                </div>
-
-                <div class="research-project">
-                    <h3>AI-Assisted Microstructure Realization for Property-Driven Design <span class="pub-tag"><em>Materials</em>, 2023</span></h3>
                     <p>
-                        Built an ML-guided pipeline for in-silico microstructure realization targeting thermal conductivity
-                        objectives in refractory alloys. The pipeline generates synthetic microstructures, simulates their
-                        properties, trains a surrogate model on the resulting dataset, and optimizes toward a target property —
-                        solving the inverse design problem without exhaustive physical experimentation.
-                        Directly relevant to alloy design and process optimization in the metals industry.
+                        My broader interests include nonlinear mechanics, damage and fracture, simulation-based inference, active learning, and microstructure–property–performance relationships. I am especially interested in transferring these modeling and metrology capabilities to semiconductor process and TCAD modeling.
                     </p>
-                </div>
 
-                <h2>News / Highlights</h2>
-                <ul class="news-list">
-                    <li><strong>March 2026:</strong> Awarded the <strong><a href="https://research.gatech.edu/2025-2026-novelis-scholars"> Novelis Graduate Scholar</a></strong> fellowship ($8,000) at Novelis Innovation Hub, Georgia Tech.</li>
-                    <li><strong>2026:</strong> First-author paper <a href="https://doi.org/10.1016/j.actamat.2026.121902" target="_blank" rel="noopener">Sequential Bayesian Inference of the GTN Damage Model Using Multimodal Experimental Data</a> published in <em>Acta Materialia</em>.</li>
-                    <li><strong>2025:</strong> Archival Journal Publication Fellowship, Georgia Tech.</li>
-                    <li><strong>2025:</strong> Presented "Advanced Calibration of the GTN Damage Model for Aluminum Alloy AA6111 via Bayesian Inference and Digital Image Correlation" at TMS Annual Meeting.</li>
-                    <li><strong>2023:</strong> Computational Materials Science Summer School, Texas A&M University.</li>
-                </ul>
+                    <div class="focus-list" aria-label="Core expertise">
+                        <span>ABAQUS / FEM</span>
+                        <span>Python automation</span>
+                        <span>Bayesian inference</span>
+                        <span>DIC &amp; metrology</span>
+                        <span>Surrogate modeling</span>
+                        <span>HPC workflows</span>
+                    </div>
+                </section>
 
-                <h2 id="publications">Journal Papers</h2>
-                <ol class="pub-list">
-                    <li>
-                        <a href="https://doi.org/10.1016/j.actamat.2026.121902" target="_blank" rel="noopener">Sequential Bayesian Inference of the GTN Damage Model Using Multimodal Experimental Data</a><br>
-                        with D. Renner, A. Khosravani, S. R. Kalidindi, <em>Acta Materialia</em>, 2026.
-                    </li>
-                    <li>
-                        <a href="https://doi.org/10.1016/j.mtla.2024.102277" target="_blank" rel="noopener">Investigation of Kinetics of Passive Layer Formation on Various Microstructures in Thermo-Mechanically Treated Steel in Simulated Concrete Pore Solution</a><br>
-                        with G. Daviran, S. R. Kalidindi, A. Poursaee, <em>Materialia</em>, 2024.
-                    </li>
-                    <li>
-                        <a href="https://doi.org/10.3390/ma16031088" target="_blank" rel="noopener">Design of Refractory Alloys for Desired Thermal Conductivity via AI-Assisted In-Silico Microstructure Realization</a><br>
-                        with G. Faraji, M. Baghani, M.S. Hashemi, A. Sheidaei, M. Baniassadi, <em>Materials</em> 16(3), 1088, 2023.
-                    </li>
-                </ol>
+                <section id="research" class="section-block">
+                    <div class="section-heading">
+                        <p class="eyebrow">Selected work</p>
+                        <h2>Research</h2>
+                        <p>Multimodal material characterization—from finite-element simulation and experimental measurement to uncertainty-aware inference.</p>
+                    </div>
+
+                    <article class="research-card">
+                        <div class="project-meta">
+                            <span>Damage &amp; fracture</span>
+                            <span>Acta Materialia · 2026</span>
+                        </div>
+                        <h3>Sequential Bayesian inference for GTN damage modeling</h3>
+                        <p>
+                            I developed a surrogate-accelerated framework to identify Gurson–Tvergaard–Needleman damage parameters for AA6111 aluminum. The method combines specimen-level force–displacement curves with spatially resolved DIC strain fields, compresses both data streams with PCA, and uses Gaussian-process emulators with Transitional MCMC to recover full posterior distributions rather than a single best fit.
+                        </p>
+                        <figure class="research-figure">
+                            <img src="assets/research/gtn-field-comparison.png" alt="Experimental DIC strain, finite-element prediction, and their spatial difference near the specimen notch" loading="lazy">
+                            <figcaption>Experimental DIC strain, inferred finite-element response, and pointwise difference near the fracture region.</figcaption>
+                        </figure>
+                        <div class="project-links">
+                            <a href="https://doi.org/10.1016/j.actamat.2026.121902" target="_blank" rel="noopener">Journal article <span aria-hidden="true">↗</span></a>
+                            <a href="https://arxiv.org/abs/2510.01016" target="_blank" rel="noopener">Preprint <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="project-meta">
+                            <span>Simulation-based inference</span>
+                            <span>Under review · 2026</span>
+                        </div>
+                        <h3>Amortized posteriors from small-punch-test measurements</h3>
+                        <p>
+                            I developed a likelihood-free GP–Conditional Flow Matching framework for rapid estimation of Young’s modulus and yield strength from early small-punch-test measurements. The model learns from synthetic force–displacement and DIC observations, then generates posterior samples for a new experiment without running a fresh Monte Carlo chain. Adding the full-field DIC measurement substantially reduces posterior uncertainty compared with force data alone.
+                        </p>
+                        <div class="research-visuals">
+                            <figure class="research-figure workflow-figure">
+                                <img src="assets/research/spt-workflow.png" alt="Two-stage workflow connecting finite-element simulation, feature extraction, Gaussian-process surrogates, and Conditional Flow Matching" loading="lazy">
+                                <figcaption>Pre-computation and runtime stages of the GP–CFM inference workflow.</figcaption>
+                            </figure>
+                            <figure class="research-figure posterior-figure">
+                                <img src="assets/research/spt-posterior.png" alt="Posterior contours for Young's modulus and yield strength showing uncertainty reduction when DIC data are added" loading="lazy">
+                                <figcaption>DIC features contract the joint posterior toward independent tensile reference values.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://arxiv.org/abs/2607.24534" target="_blank" rel="noopener">Read the preprint <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </article>
+
+                    <div class="research-grid">
+                        <article class="research-card compact-card">
+                            <div class="project-meta">
+                                <span>Ongoing Ph.D. research</span>
+                                <span>2026–present</span>
+                            </div>
+                            <h3>Active simulation-based inference</h3>
+                            <p>
+                                A posterior-guided active-learning framework that selects high-value finite-element simulations while maintaining global model accuracy. The bounded autonomous workflow handles candidate generation, ABAQUS execution, validation, failure recovery, surrogate retraining, uncertainty assessment, and reproducible provenance tracking.
+                            </p>
+                        </article>
+
+                        <article class="research-card compact-card">
+                            <div class="project-meta">
+                                <span>Inverse materials design</span>
+                                <span>Materials · 2023</span>
+                            </div>
+                            <h3>AI-assisted microstructure realization</h3>
+                            <p>
+                                A machine-learning-guided workflow for designing tungsten–copper microstructures with targeted anisotropic thermal conductivity. The framework connects synthetic microstructure generation, FFT homogenization, and an autoencoder-based surrogate to solve forward characterization and inverse design problems.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://doi.org/10.3390/ma16031088" target="_blank" rel="noopener">Journal article <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section-block highlights-section" aria-labelledby="highlights-heading">
+                    <div class="section-heading">
+                        <p class="eyebrow">Recent</p>
+                        <h2 id="highlights-heading">Highlights</h2>
+                    </div>
+                    <ul class="timeline-list">
+                        <li><time datetime="2026">2026</time><span>Named a <a href="https://research.gatech.edu/2025-2026-novelis-scholars" target="_blank" rel="noopener">Novelis Graduate Scholar</a> at Georgia Tech.</span></li>
+                        <li><time datetime="2026">2026</time><span>Published first-author work on multimodal Bayesian calibration of the GTN damage model in <em>Acta Materialia</em>.</span></li>
+                        <li><time datetime="2026">2026</time><span>Completed a reproducible, expanded-domain campaign of 63 ABAQUS simulations with automated integrity checks, monitoring, and ODB extraction.</span></li>
+                        <li><time datetime="2025">2025</time><span>Presented GTN damage-model calibration using Bayesian inference and DIC at the TMS Annual Meeting.</span></li>
+                    </ul>
+                </section>
+
+                <section id="publications" class="section-block publications-section">
+                    <div class="section-heading">
+                        <p class="eyebrow">Selected</p>
+                        <h2>Publications</h2>
+                    </div>
+                    <ol class="publication-list">
+                        <li>
+                            <span class="publication-year">2026</span>
+                            <div><a href="https://doi.org/10.1016/j.actamat.2026.121902" target="_blank" rel="noopener">Sequential Bayesian Inference of the GTN Damage Model Using Multimodal Experimental Data</a><p>M. A. Seyed Mahmoud, D. Renner, A. Khosravani, and S. R. Kalidindi · <em>Acta Materialia</em> 306, 121902.</p></div>
+                        </li>
+                        <li>
+                            <span class="publication-year">2026</span>
+                            <div><a href="https://arxiv.org/abs/2607.24534" target="_blank" rel="noopener">Amortized Posteriors for Estimation of Material Constitutive Parameters from Multimodal Measurements on Small Punch Tests</a><p>M. A. Seyed Mahmoud, A. Venkatraman, R. Mahat, S. Mitra, and S. R. Kalidindi · arXiv preprint, under review.</p></div>
+                        </li>
+                        <li>
+                            <span class="publication-year">2024</span>
+                            <div><a href="https://doi.org/10.1016/j.mtla.2024.102277" target="_blank" rel="noopener">Investigation of Kinetics of Passive Layer Formation on Various Microstructures in Thermo-Mechanically Treated Steel in Simulated Concrete Pore Solution</a><p>G. Daviran, M. A. Seyed Mahmoud, S. R. Kalidindi, and A. Poursaee · <em>Materialia</em>.</p></div>
+                        </li>
+                        <li>
+                            <span class="publication-year">2023</span>
+                            <div><a href="https://doi.org/10.3390/ma16031088" target="_blank" rel="noopener">Design of Refractory Alloys for Desired Thermal Conductivity via AI-Assisted In-Silico Microstructure Realization</a><p>S. M. A. Seyed Mahmoud et al. · <em>Materials</em> 16(3), 1088.</p></div>
+                        </li>
+                    </ol>
+                </section>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Mohammad Ali
+        <p>© 2026 Mohammad Ali Seyed Mahmoud · Computational Materials Engineering</p>
+    </footer>
+</body>
+</html>
